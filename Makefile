@@ -4,7 +4,7 @@ NOW=$(shell date +%Y-%m-%dT%H:%M:%S%z)
 PKG_NOTEBOOKS:=$(OUT)/notebooks-$(COMMIT_ID).tar.gz
 PKG_DATA:=$(OUT)/data-$(COMMIT_ID).tgz
 VERSION_FILE:=$(OUT)/version.txt
-DOCKER_IMAGE_NAME:=bigdataupv/pandas_notebooks
+DOCKER_IMAGE_NAME:=bigdataupv/financial_analysis
 
 .PHONY: all
 all: clean $(PKG_DATA) $(PKG_NOTEBOOKS) $(VERSION_FILE)
